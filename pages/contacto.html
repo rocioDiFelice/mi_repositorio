@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--INICIO HEAD-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="styleSheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <LINK REL=StyleSheet HREF="../css/estilo.css">
+    <title> Di Felice Muebles </title>
+</head>
+<!--FIN HEAD-->
+
+<!--INICIO BODY-->
+<body>
+    <!--INICIO HEADER-->
+    <header>
+           
+        <!--INICIO NAV-->
+        <nav>
+            <a href="index.html">
+                <img src="../content/logo.png" alt="Logo Di Felice Muebles" class="logo">
+            </a>
+
+            <div class="menu">
+                <a href="../index.html">HOME</a>
+                <a href="./nosotros.html">NOSOTROS</a>
+                <a href="./cocinas.html">COCINAS</a> 
+                <a href="./placard.html">PLACARD</a>
+                <a href="./living.html">LIVING</a>
+                <a href="./contacto.html">CONTACTO</a>
+            </div>
+        </nav>
+        
+        <div class="encabezado">
+            <h1 class="encabezado__texto">CONTANOS TU PROYECTO PARA PODER HACERLO REALIDAD</h1>
+            <img src="../content/contactoBanner.png" alt="Mueble biblioteca laqueado blanco madera" class="encabezado__banner">
+        </div>
+        
+    </header>
+    <!--FIN HEADER--> 
+    
+    <!--INICIO MAIN-->
+    <main class="mainContacto"> 
+        <!--INICIO SECTION-->
+        <section>
+
+            <!--INICIO FORM-->
+            <form> 
+
+                <!--INICIO DIV-->
+                
+                <div class="row g-2 cajaFormContacto">
+                    <div class="col-md">
+                      <div class="form-floating">
+                        <input type="text" class="form-control" id="floatingInputGrid" placeholder="Nombre y Apellido">
+                        <label for="floatingInputGrid">Ingresá tu nombre</label>
+                      </div>
+                    </div>
+                    <div class="col-md">
+                      <div class="form-floating">
+                        <input type="text" class="form-control" id="floatingInputGrid" placeholder="+54 11 23456789" >
+                        <label for="floatingInputGrid">Ingresá tu apellido</label>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="row g-2 cajaFormContacto">
+                    <div class="col-md">
+                      <div class="form-floating">
+                        <input type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com">
+                        <label for="floatingInputGrid">Mail</label>
+                      </div>
+                    </div>
+                    <div class="col-md">
+                      <div class="form-floating">
+                        <input type="number" class="form-control" id="floatingInputGrid" placeholder="+54 11 23456789" >
+                        <label for="floatingInputGrid">Número de contacto</label>
+                      </div>
+                    </div>
+                </div>
+
+                <!--FIN DIV-->
+
+
+                <!--INICIO DIV-->
+                <p class="textoFormContacto">Interés en:</p>
+                
+                <div class="cajaFormContactoDos container-fluid">
+                    <div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">Cocina</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">Placard</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox3">Living</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                        <label class="form-check-label" for="inlineCheckbox4">Escritorio</label>
+                    </div>
+                    </div>
+                </div>
+                <!--FIN DIV-->
+
+
+                <!--INICIO DIV-->
+                <div class="cajaComentariosContacto mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Comentarios:</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <!--INICIO DIV-->
+
+
+
+                <!-- INICIO BOTTON -->
+                <div class="cajaBotonContacto">
+                    <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">Enviar</button>
+                    <button type="button" class="btn btn-secondary btn-sm">Reestablecer</button>
+                </div>
+                <!--FIN BUTTON-->
+  
+                <!-- INICIO MODAL -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">¡Gracias por tu mensaje!</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                        <div class="modal-body">
+                            A la brevedad, nos pondremos en contacto con vos.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          
+                        </div>
+                    </div>
+                </div>
+                <!--FIN MODAL-->
+
+            </form>
+            <!--FIN FORM-->
+
+        </section>
+        <!--FIN SECTION-->
+
+    </main>
+    <!--FIN MAIN-->
+
+    <!--INICIO FOOTER-->  
+
+    <footer> 
+
+        <h4 class="textoFooter">PONETE EN CONTACTO</h4>
+        <div class="cajaFooter">
+            <img src="../content/footerMail.png" alt="Icono de Mail" class="iconoFooterUno">
+            <a href="info@difelicemuebles.com.ar" class="textoRedesFooterUno">info@difelicemuebles.com.ar</a>
+            
+            <img src="../content/footerInstagram.png" alt="Logo de Instagram" class="iconoFooterDos">
+            <a href="https://www.instagram.com/difelicemuebles/" class="textoRedesFooterDos">@difelicemuebles</a>
+            
+            <img src="../content/footerFacebook.png" alt="Logo de Facebook" class="iconoFooterTres">
+            <a href="https://www.facebook.com/DiFeliceMuebles" class="textoRedesFooterTres">/DiFeliceMuebles</a>
+            
+        </div>
+        
+    </footer>
+    <!--FIN FOOTER-->
+    
+    <!--CDN de Bootstrap del CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>    <!-- CDN de Bootstrap del JS -->
+      
+</body>
+<!--FIN BODY-->
+
+</html>
+<!--FIN HTML-->

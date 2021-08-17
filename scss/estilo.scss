@@ -3,10 +3,11 @@
     padding: 0px;
     border: 0px;
     text-decoration: none;
+    
 }
 
 body{
-    background-color: $colorFondoBeige;
+    background-color: #EEEBDD;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -15,7 +16,7 @@ nav{
     height: 80px;
     padding-bottom: 10px 10px 10px 10px;
     border-bottom: 7px solid #B40000;
-    background-color: $colorFondoBlanco;
+    background-color: white;
     display: flex;  
     position: fixed;
     z-index: 999;
@@ -29,9 +30,9 @@ nav{
         justify-content: space-around;
         font-size: 14px;
         font-weight: bold;
-        color: $colorTextoNegro;
+        color: black;
+        text-decoration: none;
     }
-
 
     .logo{
         width: 50%;
@@ -39,8 +40,6 @@ nav{
     }
 
 }
-
-
 
 .encabezado{
     width: 100%;
@@ -59,7 +58,7 @@ nav{
         padding: 300px 0px 20px 50px;
         margin: 0px 0px 0px 0px;
         font-size: 250%;
-        color: $colorTextoBeige;
+        color: #EEEBDD;
         font-weight: bold;
         text-align: left;
         line-height: 40px;
@@ -91,7 +90,7 @@ nav{
 .sectionHome{
     width: 100%;
     height: 150px;
-    background-color: $colorFondoGris;
+    background-color: #414141;
     display: flex;
     justify-content: flex-end;
 
@@ -103,7 +102,7 @@ nav{
         font-weight: bold;
         text-transform: uppercase;
         text-align: right;
-        color: $colorTextoBeige;
+        color: #EEEBDD;
     }
 }
 
@@ -118,14 +117,10 @@ nav{
     grid-template-rows: 421px 421px;
     grid-template-areas: "foto1 foto2 foto3";
     
-    
-    @mixin fotosHome ($widthfotos, $heightfotos) {
-        width: $widthfotos;
-        height: $heighfotos;
-    }
      
     &__uno{
-        @include fotosHome (80% , 80%) ;
+        width: 80%;
+        height: 80%;
         margin: 0px 0px 0px 0px;
         padding: 37px 0px 0px 37px;
         grid-area: foto1;  
@@ -139,7 +134,8 @@ nav{
 
 
     &__dos{
-        @include fotosHome (80% , 80%) ;
+        width: 80%;
+        height: 80%;
         padding: 37px 0px 0px 37px;
         margin: 0px 0px 0px 0px;
         grid-area: foto2;  
@@ -153,7 +149,8 @@ nav{
 
     
     &__tres{
-        @include fotosHome (80% , 80%) ;
+        width: 80%;
+        height: 80%;
         margin: 0px 0px 0px 0px;
         padding: 37px 0px 0px 37px;
         grid-area: foto3;
@@ -179,7 +176,7 @@ nav{
 .producto{
     width: 100%;
     height: 140px;
-    background-color: $colorFondoGris;
+    background-color: #414141;
     display: grid;
     grid-template-columns: 210px 210px 210px 210px 210px 210px;
     grid-template-rows: 421px 421px;
@@ -195,7 +192,7 @@ nav{
         text-align: center;
         justify-content: space-around;
         align-items: center;
-        color: $colorTextoBeige;
+        color: #EEEBDD;
         animation-timing-function: ease-in;
         animation-delay: 15s;
     }
@@ -217,10 +214,10 @@ footer{
     width: 100%;
     height: 125px;
     background-color: #B40000;
-    color: $colorTextoBeige;
+    color: #EEEBDD;
 
     .textoFooter{
-        color: $colorTextoBeige;
+        color: #EEEBDD;
         font-size: 20px;
         padding: 10px 0px 10px 10px;
     }
@@ -250,7 +247,7 @@ footer{
             width: 100%;
             font-size: 15px;
             padding: 25px 10px 10px 90px;
-            color:$colorTextoBeige;
+            color: #EEEBDD;
             grid-area: texto1;
             animation-timing-function: ease-in;
             animation-delay: 7s;
@@ -276,10 +273,314 @@ footer{
             transform: scale(1.1,1.1);
             transition: all 1.2s;
         }
-        
-        
+      
     }
 }
 
+.cajaSectionNosotros{
+    width: 100%;
+    height: 280px;
+    display: flex;
+    flex-direction: row;
+    background-color: #414141;
+    
+    &__uno{
+        width: 40%;
+        height: 500px;
+        padding: 20px 0px 0px 20px;
+    }
+
+    &__dos{
+        width: 60%;
+        height: 500px;
+        padding: 20px 20px 10px 20px;
+    }
+}
+
+.textoSectionNosotros{
+    height: 100%;
+    color: #EEEBDD;
+    background-color: #414141;
+
+    &__uno{
+        margin: 20px 0px 0px 0px;
+        padding: 30px 60px 5px 30px;
+        font-size: 230%;
+        font-weight: bold;
+        line-height: 50px;
+    }
+
+    &__dos{
+        padding: 65px 35px 0px 35px;
+        font-size: 100%;
+        font-size: normal;
+        text-align: justify;
+    }
+    
+}
+
+.cajaFotosNosotros{
+    width: 100%;
+    height: 450px;
+    margin: 0px 0px 0px 0px;
+    padding: 40px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    background-color: #414141;
+}
+
+.fotoNosotros{
+    width: 25%;
+    height: 320px;
+    margin: 0px 0px 0px 0px;
+    padding: 40px 70px 10px 10px;    
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    
+    &__uno:hover{
+    transform: scale(1.1,1.1);
+    transition: all 1.3s;
+    }
+    &__dos:hover{
+        transform: scale(1.1,1.1);
+        transition: all 1.3s;
+    }
+
+}
+
+
+.textoNosotros{
+    width: 33%;
+    height: 320px;
+    margin: 0px 0px 0px 0px;
+    padding: 80px 30px 30px 20px;
+    color: #EEEBDD;
+    text-align: justify;
+}
+
+
+
+
+.cajaSectionCocina{
+    width: 100%;
+    height: 840px;
+    padding-top:40px;
+    padding-bottom:40px;
+    background-color: #414141;
+    display: grid;
+    grid-template-columns: 421px 421px 421px;
+    grid-template-rows: 421px 421px;
+    grid-template-areas: "fotoCocina1 textoCocina2 fotoCocina3"
+                         "textoCocina1 fotoCocina2 textoCocina3";
+
+    &__foto{
+        width: 90%;
+        padding: 20px 20px 20px 20px;
+        animation-timing-function: ease-in;
+        animation-delay: 15s;
+        
+        &--uno{
+            grid-area: fotoCocina1;
+        }
+
+        &--tres{
+            grid-area: fotoCocina3;
+        }
+
+        &--cinco{
+            grid-area: fotoCocina2;
+        }
+    }
+    
+
+    
+                        
+    &__texto{
+        width: 100%;
+        padding-top:50%;
+        color:#EEEBDD;
+        font-size: 35px;
+        font-weight: bold;
+        text-align: center;
+
+        &--dos{
+            grid-area: textoCocina2;
+        }
+
+        &--cuatro{
+            grid-area: textoCocina1;
+        }
+
+        &--seis{
+            grid-area: textoCocina3;
+        }
+    }
+                        
+}
+
+
+
+
+
+
+.cajaSectionPlacard{
+    width: 100%;
+    height: 550px;
+    background-color: #414141;
+
+}
+.textoPlacard{
+    width: 100%;
+    padding: 20px 0px 0px 0px;
+    color:#EEEBDD;
+    text-align:center;
+}
+.cajaFotosPlacard{
+    width: 100%;
+    height: 410px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    display: grid;
+    grid-template-columns: 430px 430px 430px;
+    grid-template-rows: 410px;
+    grid-template-areas: "fotoPlacard1 fotoPlacard2 fotoPlacard3";
+    
+}
+
+.fotoPlacard{
+    width: 75%;
+    height: 80%;
+    margin: 0px 0px 0px 0px;
+    padding: 28px 0px 0px 30px;  
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+
+    &__uno{
+        grid-area: fotoPlacard1;
+    }
+    &__uno:hover{
+        transform: scale(1.1,1.1);
+        transition: all 1.1s;
+    }
+
+    &__dos{
+        grid-area: fotoPlacard2;
+    }
+    &__dos:hover{
+        transform: scale(1.1,1.1);
+        transition: all 1.1s;
+    }
+
+    &__tres{
+        grid-area: fotoPlacard3;
+    }
+    &__tres:hover{
+        transform: scale(1.1,1.1);
+        transition: all 1.1s;
+    }
+}
+
+
+
+
+.cajaSectionLiving{
+    width: 100%;
+    height: 840px;
+    padding-top:40px;
+    padding-bottom:40px;
+    background-color: #414141;
+    display: grid;
+    grid-template-columns: 421px 421px 421px;
+    grid-template-rows: 421px 421px;
+    grid-template-areas: "fotoLiving1 textoLiving2 fotoLiving3"
+                         "textoLiving1 fotoLiving2 textoLiving3";
+
+    
+    &__foto{
+        width: 90%;
+        padding: 20px 20px 20px 20px;
+        animation-timing-function: ease-in;
+        animation-delay: 15s;
+    
+        &--uno{
+            grid-area: fotoLiving1;
+        }
+        &--dos{
+            grid-area: fotoLiving2;
+        }
+        &--tres{
+            grid-area: fotoLiving3;
+        }
+
+    }
+
+    &__texto{
+        width: 100%;
+        padding-top:50%;
+        font-size: 35px;
+        font-weight: bold;
+        text-align: center;
+        color: #EEEBDD;
+ 
+
+        &--cuatro{
+            grid-area: textoLiving1;
+            
+        }
+
+        &--cinco{
+            grid-area: textoLiving2;
+        }
+
+        &--seis{
+            grid-area: textoLiving3;
+        }
+    }
+
+}
+
+
+
+.mainContacto{
+    width: 100%;
+    height: 600px;
+    background-color: #EEEBDD;
+}
+
+.cajaFormContacto{
+    width: 90%;
+    height: 100px;
+    margin: 0px 0px 0px 0px;
+    padding: 10px 0px 0px 70px;
+    position: relative;
+}
+
+.textoFormContacto{
+    width: 70%;
+    padding: 20px 0px 0px 75px;
+}
+.cajaFormContactoDos{
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 10px 140px;
+}
+.cajaFormContactoTres{
+    width: 50%;
+    margin: 0px 0px 0px 5px;
+    padding: 10px 0px 0px 60px;
+}
+
+
+.cajaComentariosContacto{
+    width: 90%;
+    height: 70px;
+    padding: 10px 0px 0px 75px;
+
+}
+.cajaBotonContacto{
+    width: 100%;
+    height: 120px;
+    padding: 65px 0px 25px 75px;
+}
 
 
